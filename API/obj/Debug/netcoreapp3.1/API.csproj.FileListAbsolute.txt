@@ -47,3 +47,7 @@ C:\Users\jonat\Desktop\Projects\Reactivities\API\bin\Debug\netcoreapp3.1\runtime
 C:\Users\jonat\Desktop\Projects\Reactivities\API\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\jonat\Desktop\Projects\Reactivities\API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\jonat\Desktop\Projects\Reactivities\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\jonat\Desktop\Projects\Reactivities\API\obj\Debug\netcoreapp3.1\API.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Desktop\Projects\Reactivities\API\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\Users\jonat\Desktop\Projects\Reactivities\API\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\jonat\Desktop\Projects\Reactivities\API\obj\Debug\netcoreapp3.1\API.genruntimeconfig.cache

@@ -9,3 +9,4 @@ C:\Users\jonat\Desktop\Projects\Reactivities\Persistence\obj\Debug\netstandard2.
 C:\Users\jonat\Desktop\Projects\Reactivities\Persistence\obj\Debug\netstandard2.1\Persistence.csproj.CopyComplete
 C:\Users\jonat\Desktop\Projects\Reactivities\Persistence\obj\Debug\netstandard2.1\Persistence.dll
 C:\Users\jonat\Desktop\Projects\Reactivities\Persistence\obj\Debug\netstandard2.1\Persistence.pdb
+C:\Users\jonat\Desktop\Projects\Reactivities\Persistence\obj\Debug\netstandard2.1\Persistence.csproj.CoreCompileInputs.cache

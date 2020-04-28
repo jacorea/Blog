@@ -13,6 +13,7 @@ namespace Persistence
 
         //bring entities that are going to use for Db found in Domain
         public DbSet<Value> Values { get; set; }
+        public DbSet<Activity> Activities { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder) 
         {

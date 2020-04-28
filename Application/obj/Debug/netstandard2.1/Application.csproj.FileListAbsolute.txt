@@ -11,3 +11,4 @@ C:\Users\jonat\Desktop\Projects\Reactivities\Application\obj\Debug\netstandard2.
 C:\Users\jonat\Desktop\Projects\Reactivities\Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete
 C:\Users\jonat\Desktop\Projects\Reactivities\Application\obj\Debug\netstandard2.1\Application.dll
 C:\Users\jonat\Desktop\Projects\Reactivities\Application\obj\Debug\netstandard2.1\Application.pdb
+C:\Users\jonat\Desktop\Projects\Reactivities\Application\obj\Debug\netstandard2.1\Application.csproj.CoreCompileInputs.cache
