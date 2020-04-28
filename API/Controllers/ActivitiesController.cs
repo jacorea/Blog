@@ -24,10 +24,17 @@ namespace API.Controllers
             return await _mediator.Send(new List.Query());
         }
 
+        //Getting details of one activity
         [HttpGet("{id}")]
         public async Task<ActionResult<Activity>> Details(Guid id)
         {
             return await _mediator.Send(new Details.Query{Id = id});
+        }
+        //creating a new activity
+        [HttpPost]
+        public async Task<ActionResult<Unit>> Create(Create.Command command)
+        {
+            return await _mediator.Send(command);
         }
     }
 }
