@@ -3,24 +3,30 @@ import { Item, Button, Label, Segment } from 'semantic-ui-react'
 import { IActivity } from '../../../app/models/activity'
 
 interface IProps {
-    activities: IActivity[]
+    activities: IActivity[];
+    selectActivity: (id: string) => void;
 }
 
-const ActivityList: React.FC<IProps> = ({activities}) => {
+const ActivityList: React.FC<IProps> = ({activities, selectActivity}) => {
   return (
     <Segment clearing>
         <Item.Group divided>
-            {activities.map((activity: any)=>(
+            {activities.map((activity: any) => (
             <Item key={activity.id}>
                 <Item.Content>
                 <Item.Header as='a'>{activity.title}</Item.Header>
             <Item.Meta>{new Date(activity.date).toDateString()}</Item.Meta>
                 <Item.Description>
                 <div>{activity.description}</div>
-            <div>{activity.city}, {activity.venue}</div>
+                <div>{activity.city}, {activity.venue}</div>
                 </Item.Description>
                 <Item.Extra>
-                    <Button floated="right" content="View" color='facebook' />
+                    <Button 
+                        floated="right" 
+                        content="View" 
+                        color='facebook' 
+                        onClick={()=>selectActivity(activity.id)}
+                    />
                     <Label basic content={activity.category}/>
                 </Item.Extra>
             </Item.Content>

@@ -11,6 +11,11 @@ import ActivityDashboard from '../../features/activities/dashboard/ActivityDashb
 const App =() => {
 
   const [activities, setActivities] = useState<IActivity[]>([]);
+  const [selectedActivity, setSelectedActivity] = useState<IActivity | null>(null);
+
+  const handleSelectedActivity = (id: string) => {
+    setSelectedActivity(activities.filter(a => a.id === id)[0])
+  }
 
   useEffect(()=> {
     const url ="http://localhost:5000/api/activities";
@@ -24,7 +29,11 @@ const App =() => {
     <Fragment>  
       <NavBar />
         <Container style ={{marginTop: '6em'}}>
-          <ActivityDashboard activities = {activities} />
+          <ActivityDashboard 
+            activities = {activities} 
+            selectActivity={handleSelectedActivity} 
+            selectedActivity={selectedActivity}
+          />
         </Container>
     </Fragment>
   );
