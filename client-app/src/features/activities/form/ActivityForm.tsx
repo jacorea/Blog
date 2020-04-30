@@ -1,9 +1,13 @@
 import React from 'react'
-import { Segment, Form, Header } from 'semantic-ui-react'
+import { Segment, Form, Header,Button } from 'semantic-ui-react'
 
-const ActivityForm = () => {
+interface IProps {
+  setEditMode: (editMode: boolean) => void;
+}
+
+const ActivityForm: React.FC<IProps> = ({setEditMode}) => {
   return (
-    <Segment>
+    <Segment clearing>
         <Form>
             <Header as="h2" content="Activity Form" textAlign="center"/>
             <Form.Input placeholder="Title"/>
@@ -12,7 +16,8 @@ const ActivityForm = () => {
             <Form.Input type="date" placeholder="Date"/>
             <Form.Input placeholder="City"/>
             <Form.Input placeholder="Venue"/>
-            <Form.Button fluid color="facebook">Submit</Form.Button>
+            <Button floated="right" type="submit" color="facebook" content="Submit"/>
+            <Button onClick={()=>setEditMode(false)} floated="right" type="button" color="red" content="Cancel" />
         </Form>
     </Segment>
   )
